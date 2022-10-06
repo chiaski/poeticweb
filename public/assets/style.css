@@ -55,12 +55,12 @@ main section::-webkit-scrollbar {
 
 /* Track */
 main section::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f4f3f0;
 }
 
 /* Handle */
 main section::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #4FA8FA;
 }
 
 /* Handle on hover */
@@ -125,6 +125,12 @@ h3::before {
 
 h3::after {
   content: " ♡";
+}
+
+li {
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+  text-decoration: none;
 }
 
 .notes {
@@ -193,13 +199,11 @@ h3::after {
   text-shadow: 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff;
 }
 #one #links {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
   text-align: center;
   padding: 2.5vh 0;
 }
 #one #links a {
+  display: block;
   font-size: 16px;
   margin: 0.5em 0;
   text-shadow: 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff;
@@ -207,6 +211,23 @@ h3::after {
 }
 #one #links a:hover {
   color: red;
+  cursor: pointer;
+}
+#one #links a.extra {
+  display: inline-block;
+  background: rgba(244, 243, 240, 0.84);
+  font-size: 0.9em;
+  padding: 0.5em;
+  margin: 1em;
+  min-height: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px #f4f3f0, 0 0 30px #f4f3f0, 0 0 30px #f4f3f0;
+  color: #2a2323;
+  text-decoration: none;
+}
+#one #links a.extra:hover {
+  background: rgba(244, 243, 240, 0.84);
+  transform: translateY(-2px);
 }
 
 #two {

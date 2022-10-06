@@ -43,6 +43,7 @@ $blue: #4FA8FA;
 $w: #f4f3f0;
 $w0: rgba(244, 243, 240, 0.84);
 $b: #2a2323;
+$p: #2a2323;
 
 //
 
@@ -75,12 +76,12 @@ main section::-webkit-scrollbar {
 
 /* Track */
 main section::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: $w;
 }
 
 /* Handle */
 main section::-webkit-scrollbar-thumb {
-  background: #888;
+  background: $blue;
 }
 
 /* Handle on hover */
@@ -147,6 +148,12 @@ h3::before {
 
 h3::after {
   content: " ♡";
+}
+
+li {
+  font-size: .8em;
+  margin-bottom: .5em;
+  text-decoration: none;
 }
 
 .notes {
@@ -234,13 +241,11 @@ h3::after {
 
   #links {
 
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
     text-align: center;
     padding: 2.5vh 0;
 
     a {
+      display: block;
       font-size: 16px;
       margin: .5em 0;
       text-shadow: 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff;
@@ -249,6 +254,26 @@ h3::after {
 
     a:hover {
       color: red;
+      cursor: pointer;
+    }
+
+    a.extra {
+      display: inline-block;
+      background: $w0;
+      font-size: .9em;
+      padding: .5em;
+      margin: 1em;
+      min-height: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 30px $w, 0 0 30px $w, 0 0 30px $w;
+
+      color: $b;
+      text-decoration: none;
+    }
+
+    a.extra:hover {
+      background: $w0;
+      transform: translateY(-2px);
     }
 
 
