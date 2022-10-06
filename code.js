@@ -7,3 +7,8 @@ $("#one #links a").click(function () {
   });
 
 });
+
+$(".snippets textarea").click(function () {
+  $(this).select();
+  document.execCommand('copy');
+});
