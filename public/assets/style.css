@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+#radio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 2em;
+  border: 0.5px solid #000;
+  max-height: calc(100vh - 4em);
+  max-width: 95vw;
+  overflow-x: scroll;
+}
+
+.day {
+  flex: 1 1 0px;
+  min-width: 130px;
+  max-height: inherit;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 14px;
+  border: 0.5px solid #000;
+  text-align: center;
+  padding: 1em 0.25em;
+  margin: 0;
+  background: #fff;
+}
+
+.blocks {
+  overflow-y: scroll;
+  max-height: inherit;
+  padding-bottom: 40px;
+}
+
+.block div {
+  height: 50px;
+  width: 100%;
+  border: 0.5px solid #000;
+  text-align: center;
+  padding: 0.25em;
+  line-height: 40px;
+  font-size: 0.8em;
+}
+
+.block div * {
+  max-height: 50px;
+  box-sizing: border-box;
+}
+
+.block div:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.block2,
+.block3,
+.block4 {
+  display: none;
+}
+
+p {
+  margin: 0;
+}
+
+audio {
+  margin: 0.75em 0;
+  background: none;
+  width: 120px;
+  height: 25px;
+  font-size: 0.5em;
+}
+
+audio::-webkit-media-controls-enclosure {
+  background: transparent;
+}
+
+audio::-webkit-media-controls-panel {
+  background: transparent;
+}
+
+audio::-webkit-media-controls-timeline,
+video::-webkit-media-controls-timeline {
+  display: none;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
