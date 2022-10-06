@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Making a Poetic Web</title>
+  <title>Idea Generator</title>
   <!--
   <meta name="description" content="description" />
 <meta name="author" content="author" />
@@ -28,7 +28,7 @@
 
 
       <div class="notes">
-        Copy the code for this idea generator
+        Copy the code for this idea generator by viewing the source!
       </div>
 
 
@@ -37,6 +37,7 @@
 
 
     </section>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <section id="two">
       <style type="text/css">
@@ -52,16 +53,77 @@
           color: white;
           cursor: pointer;
         }
+
+        #ideas {
+          border: 1px dashed deepskyblue;
+          padding: 1em;
+          margin: 2em;
+        }
+
+        #ideas .idea {
+          display: inline-block;
+          width: 200px;
+          border: 1px dashed deepskyblue;
+          padding: .5em;
+          margin: 1em 0;
+          border-radius: 20px;
+        }
       </style>
 
-      <button>I want an idea for a website, please!</button>
+
+      <script type="text/javascript">
+        function getIdea() {
+
+          var numElements = $('.idea').length;
+          var randomNum = Math.floor(Math.random() * numElements);
+          $("button").prop("disabled", true);
+
+          var t = 0;
+          var repeat = setInterval(function() {
+            randomNum = Math.floor(Math.random() * numElements);
+            $('.idea').css("background", "none");
+            $('.idea:nth-child(' + randomNum + ')').css("background", "skyblue");
+            t += 1;
+
+            if (t == 5) {
+              clearInterval(repeat)
+              $("button").prop("disabled", false);
+            }
+          }, 300);
+
+          console.log("!");
+        }
+      </script>
+
+
+      <button onclick="getIdea()">I want an idea for a website, please!</button>
+
+      <div id="ideas">
+        <div class="idea">A website where you can make a wish</div>
+        <div class="idea">A website that you can rewrite</div>
+        <div class="idea">A website where you perform a ritual</div>
+        <div class="idea">A website that is a single image</div>
+        <div class="idea">A website that with a timer</div>
+        <div class="idea">A website that you need to highlight to read</div>
+        <div class="idea">A website that feels like a campfire</div>
+        <div class="idea">A website that's a screensaver</div>
+        <div class="idea">A website where you can meet up with a friend</div>
+        <div class="idea">A website made for just one friend</div>
+        <div class="idea">A website fidget spinner</div>
+        <div class="idea">A website that you keep scrolling through</div>
+        <div class="idea">A website where you can download something new</div>
+        <div class="idea">A website that only makes use of sound</div>
+        <div class="idea">A website that never loads</div>
+        <div class="idea">A website that feels like a book</div>
+        <div class="idea">A website that you can scroll through forever</div>
+        <div class="idea">A website that acts as your personal notebook</div>
+        <div class="idea">A website with at least 10 pages</div>
+        <div class="idea">A poem that you read by their &lt;title> attributes</div>
+      </div>
 
 
     </section>
   </main>
-
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script src="code.js" type="text/javascript"></script>
 
 
 </body></html>
