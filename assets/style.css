@@ -82,6 +82,13 @@ main section {
   overflow-x: hidden;
 }
 
+code {
+  letter-spacing: 0;
+  background: #2a2323;
+  color: #f4f3f0;
+  padding: 0.25em;
+}
+
 blockquote {
   font-size: 0.8em;
   line-height: 140%;
@@ -107,6 +114,14 @@ blockquote:hover {
 .dividertwo {
   border: 2px dashed #f4f3f0;
   height: 5px;
+  width: 100%;
+  display: block;
+  margin: 1em 0;
+}
+
+.spacer {
+  height: 400px;
+  max-height: 60vh;
   width: 100%;
   display: block;
   margin: 1em 0;
