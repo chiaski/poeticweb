@@ -221,6 +221,10 @@ div {
 .notes h3 {
   color: #2a2323;
 }
+.notes h2 {
+  letter-spacing: 0;
+  font-size: 1.5em;
+}
 
 a.link {
   text-align: center;
