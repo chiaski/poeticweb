@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Louise";
   src: url("Louise-Regular.woff2") format("woff2"), url("Louise-Regular.woff") format("woff");
@@ -33,6 +34,9 @@
 body {
   overflow: hidden;
   color: #2a2323;
+  font-family: "Director";
+  letter-spacing: -2px;
+  font-weight: normal;
 }
 
 main {
@@ -44,11 +48,42 @@ main {
   display: flex;
 }
 
+/* width */
+main section::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+main section::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+main section::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+main section::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 main section {
   height: 100vh;
   width: 50%;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+blockquote {
+  font-size: 0.8em;
+  line-height: 140%;
+  text-shadow: 0 0 30px #f4f3f0, 0 0 30px #f4f3f0, 0 0 30px #f4f3f0, 0 0 30px #f4f3f0, 0 0 30px #f4f3f0, 0 0 30px #f4f3f0, 0 0 30px #f4f3f0, 0 0 30px #f4f3f0;
+}
+
+blockquote:hover {
+  text-shadow: 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff;
+  cursor: default;
 }
 
 .divider {
@@ -79,6 +114,19 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+h3::before {
+  content: "♡ ";
+}
+
+h3::after {
+  content: " ♡";
+}
+
 .notes {
   background: #f4f3f0;
   border-radius: 30px;
@@ -94,6 +142,7 @@ h2 {
 
 .links-block {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0 calc(2.5vw - 1em);
 }
@@ -103,9 +152,10 @@ h2 {
 .links-block a {
   display: inline-block;
   background: rgba(244, 243, 240, 0.84);
+  font-size: 0.9em;
   padding: 0.5em;
   margin: 1em;
-  height: 40px;
+  min-height: 40px;
   border-radius: 15px;
   box-shadow: 0 0 30px #f4f3f0, 0 0 30px #f4f3f0, 0 0 30px #f4f3f0;
   color: #2a2323;
@@ -144,13 +194,14 @@ h2 {
 }
 #one #links {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   text-align: center;
   padding: 2.5vh 0;
 }
 #one #links a {
-  font-size: 24px;
-  margin: 0.25em 0;
+  font-size: 16px;
+  margin: 0.5em 0;
   text-shadow: 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff;
   color: blue;
 }
