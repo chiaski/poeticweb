@@ -630,6 +630,91 @@
 
 
         <h3>Styling</h3>
+
+        <style type="text/css">
+          @-webkit-keyframes rainbow {
+            0% {
+              color: orange;
+            }
+
+            10% {
+              color: purple;
+            }
+
+            20% {
+              color: red;
+            }
+
+            30% {
+              color: CadetBlue;
+            }
+
+            40% {
+              color: yellow;
+            }
+
+            50% {
+              color: coral;
+            }
+
+            60% {
+              color: green;
+            }
+
+            70% {
+              color: cyan;
+            }
+
+            80% {
+              color: DeepPink;
+            }
+
+            90% {
+              color: DodgerBlue;
+            }
+
+            100% {
+              color: orange;
+            }
+          }
+        </style>
+        <div class="snippet">
+          <span style="animation:rainbow 5s infinite;">Make rainbow text. Try to change this to affect the background color.</span>
+          <textarea>
+body{
+            animation: rainbow 5s infinite;
+            }
+            
+@-webkit-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+          
+          </textarea>
+        </div>
+
+        <div class="snippet">
+          <span style="background-image: linear-gradient(to right, #ff0000, #ff8000, #fff200, #51ff00, #00d0ff, #9000ff,#ff008c);
+  -webkit-background-clip: text;
+  color: transparent;">Make gradient text</span>
+          <textarea>
+span{
+  background-image: linear-gradient(to right, #ff0000, #ff8000, #fff200, #51ff00, #00d0ff, #9000ff,#ff008c);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+          </textarea>
+        </div>
+
         <div class="snippet">
           Try out <a href="https://www.w3schools.com/css/css_counters.asp">CSS counters</a> (like what's used in this section)
           <textarea>
