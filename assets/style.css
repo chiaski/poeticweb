@@ -160,7 +160,13 @@ a {
 
 p {
   font-size: 0.8em;
-  line-height: 130%;
+  line-height: 150%;
+}
+
+img {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 p,
@@ -295,12 +301,12 @@ a.link {
 #one #links a.extra {
   display: inline-block;
   background: rgba(244, 243, 240, 0.84);
-  font-size: 0.9em;
+  font-size: 0.6em;
+  letter-spacing: 0;
   padding: 0.5em;
   margin: 1em;
-  min-height: 40px;
   border-radius: 15px;
-  box-shadow: 0 0 30px #f4f3f0, 0 0 30px #f4f3f0, 0 0 30px #f4f3f0;
+  box-shadow: 0 0 30px #f4f3f0;
   color: #2a2323;
   text-decoration: none;
 }

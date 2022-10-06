@@ -185,7 +185,13 @@ a {
 
 p {
   font-size: .8em;
-  line-height: 130%;
+  line-height: 150%;
+}
+
+img {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 p,
@@ -349,12 +355,12 @@ a.link {
     a.extra {
       display: inline-block;
       background: $w0;
-      font-size: .9em;
+      font-size: .6em;
+      letter-spacing: 0;
       padding: .5em;
       margin: 1em;
-      min-height: 40px;
       border-radius: 15px;
-      box-shadow: 0 0 30px $w, 0 0 30px $w, 0 0 30px $w;
+      box-shadow: 0 0 30px $w;
 
       color: $b;
       text-decoration: none;
