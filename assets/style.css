@@ -36,6 +36,7 @@ body {
   color: #2a2323;
   font-family: "Director";
   letter-spacing: -2px;
+  counter-reset: mycounter;
   font-weight: normal;
 }
 
@@ -207,6 +208,33 @@ div {
 }
 .scroller .scroller-inside.not {
   color: rgba(255, 0, 0, 0.58);
+}
+
+.snippets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em;
+}
+.snippets h3 {
+  width: 100%;
+}
+.snippets .snippet {
+  margin: 2em 1em;
+  width: 250px;
+  font-size: 0.8em;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff;
+  border-radius: 30px;
+}
+.snippets .snippet textarea {
+  border-radius: 20px;
+  border: 1px dotted #4FA8FA;
+  font-size: 0.4em;
+  padding: 0.25rem 1rem;
+  margin: 0.25rem 0;
+  width: 100%;
 }
 
 .notes {
