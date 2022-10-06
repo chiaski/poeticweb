@@ -67,6 +67,12 @@ main {
   top: 0;
 
   display: flex;
+
+  section {
+    text-align: center;
+    flex-grow: 1;
+  }
+
 }
 
 /* width */
@@ -82,6 +88,9 @@ main section::-webkit-scrollbar-track {
 /* Handle */
 main section::-webkit-scrollbar-thumb {
   background: $blue;
+  border-radius: 15px;
+  border: 1px solid $w;
+  margin: .25em;
 }
 
 /* Handle on hover */
@@ -150,16 +159,68 @@ h3::after {
   content: " ♡";
 }
 
+h1.c,
+h2.c,
+h3.c {
+  color: $b;
+}
+
 li {
   font-size: .8em;
   margin-bottom: .5em;
   text-decoration: none;
 }
 
+hr {
+  height: 30px;
+  display: block;
+  border: 0;
+  background: none;
+  width: 100%;
+}
+
+a {
+  color: $blue;
+}
+
+p {
+  font-size: .8em;
+  line-height: 130%;
+}
+
+p,
+li,
+div {
+  text-align: left;
+}
+
+.scroller {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-height: 60vh;
+  overflow-y: scroll;
+  margin: 2em 0;
+  border-radius: 30px;
+  border: 1px solid $blue;
+
+  .scroller-inside {
+    flex-grow: 1;
+    width: 50%;
+    height: 100%;
+  }
+
+  .scroller-inside.not {
+
+    color: rgba(255, 0, 0, 0.58);
+  }
+
+}
+
 .notes {
   background: $w;
   border-radius: 30px;
-  margin: 5vh 2.5vw;
+  margin: 2.5vh 2.5vw;
   padding: 1em;
   box-shadow: 0 0 30px $w, 0 0 30px $w, 0 0 30px $w, 0 0 30px $w, 0 0 30px $w, 0 0 30px $w, 0 0 30px $w;
 
@@ -172,6 +233,33 @@ li {
 }
 
 // SPECIAL
+
+a.link {
+  text-align: center;
+  font-size: .8rem;
+  padding: .5em;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.external-website {
+
+  box-shadow: 0 0 30px $w, 0 0 30px $w, 0 0 30px $w, 0 0 30px $w, 0 0 30px $w, 0 0 30px $w, 0 0 30px $w;
+  width: 100%;
+  min-height: 500px;
+
+  iframe {
+    border: 0;
+    min-height: 500px;
+    width: 100%;
+    filter: blur(10px);
+  }
+
+  iframe:hover {
+    filter: none
+  }
+}
+
 .links-block {
 
   display: flex;
@@ -186,10 +274,9 @@ li {
   a {
     display: inline-block;
     background: $w0;
-    font-size: .9em;
+    font-size: .7em;
     padding: .5em;
     margin: 1em;
-    min-height: 40px;
     border-radius: 15px;
     box-shadow: 0 0 30px $w, 0 0 30px $w, 0 0 30px $w;
 
@@ -208,9 +295,11 @@ li {
 
 #one {
   background-image: url(clouds.gif);
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
   padding: 1em;
+  resize: horizontal;
+  overflow: auto;
 }
 
 #two {
@@ -288,6 +377,8 @@ li {
   h1,
   h2,
   h3,
+  h4,
+  h5,
   p {
     padding: .5rem 1rem;
     margin: 0;
