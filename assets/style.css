@@ -160,6 +160,10 @@ h3.c {
   color: #2a2323;
 }
 
+img.f {
+  width: 100%;
+}
+
 li {
   font-size: 0.8em;
   margin-bottom: 0.5em;
