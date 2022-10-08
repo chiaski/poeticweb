@@ -350,6 +350,7 @@ a.link {
   margin: 0.5em 0;
   text-shadow: 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff;
   color: blue;
+  text-decoration: none;
 }
 #one #links a:hover {
   color: red;
