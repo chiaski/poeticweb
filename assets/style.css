@@ -245,6 +245,16 @@ div {
   width: 100%;
 }
 
+.window {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.window img {
+  width: 100%;
+  height: 100%;
+}
+
 .notes {
   background: #f4f3f0;
   border-radius: 30px;
