@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  box-sizing:border-box;
+/*   background-image: url("https://cdn.glitch.global/402ce5d1-f5ed-4319-9bbd-cad152f099ea/wlryqakyngxpimhekg8m60xbkmfghufwc6iyut3rabmyduoausbwojed1jdbnuyy-.jpg?v=1665106154830"); */
+/*   background-image: url("https://cdn.glitch.global/402ce5d1-f5ed-4319-9bbd-cad152f099ea/c673c54666bb112dbd4065bd2ce4d26a.jpg?v=1665106297598"); */
+/*   background-color: brown; */
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7) blur(1px);
+}
+
+#poem{
+  text-align:center;
+}
+
+#poem span{
+  position: absolute;
+  font-size: 2em;
+  transition: 1s left ease-in-out, 1s top ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  width: 100px;
+  height: 100px;
+  background-image: url("https://cdn.glitch.global/402ce5d1-f5ed-4319-9bbd-cad152f099ea/26-268684_fall-leaves-clip-art-beautiful-autumn-clipart-brown.png?v=1665105795611");
+  background-color: transparent;
+  background-size: 100px 100px;
+  font-size: 14px;
+  padding-top: 8px;
+}

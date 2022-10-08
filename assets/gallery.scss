@@ -1,0 +1,30 @@
+#gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  a {
+
+    display: inline-block;
+    width: 190px;
+    margin: 1em;
+    text-decoration: none;
+    text-align: center;
+
+    .piece {
+      text-align: center;
+      font-size: .6em;
+      letter-spacing: 90%;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+  }
+}
+
+
+#gallery:hover a:not(:hover) {
+  filter: blur(3px);
+}
