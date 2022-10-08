@@ -57,20 +57,23 @@
         #ideas {
           border: 1px dashed deepskyblue;
           padding: 1em;
-          margin: 2em;
+          margin: 1em;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
         }
 
         #ideas .idea {
           display: inline-block;
           width: 200px;
           border: 1px dashed deepskyblue;
-          padding: .5em;
+          padding: .75em;
           margin: 1em 0;
+          font-size: .8em;
           border-radius: 20px;
         }
       </style>
-
-
+      
       <script type="text/javascript">
         function getIdea() {
 
@@ -94,7 +97,6 @@
           console.log("!");
         }
       </script>
-
 
 
       <div id="ideas">
