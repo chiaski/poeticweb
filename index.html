@@ -42,6 +42,7 @@
 
         <br>
         <a data-jump="making">How to explore these exercises</a>
+        <a data-jump="codeinfo">A short explanation on HTML/CSS/JS</a>
         <a data-jump="snippets">Snippets</a>
         <a data-jump="publishing">Publishing</a>
 
@@ -283,7 +284,7 @@
       <a class="link" href="https://www.yourworldoftext.com/~Developh/" target="_blank">Open Your World of Text in another tab</a>
 
       <hr>
-      <div class="spacer" style="background-image:url(assets/clouds.gif)">
+      <div class="spacer" style="background-image:url(assets/clouds-horizontal.gif)">
         <br><br>
         &nbsp;&nbsp;&nbsp;(\(\<br>
         &nbsp;&nbsp;&nbsp;( -.-)<br>
@@ -408,7 +409,7 @@
 
       <hr>
 
-      <div class="links-block" style="background-image:url(assets/clouds.gif)">
+      <div class="links-block" style="background-image:url(assets/clouds-horizontal.gif)">
         <h4>More readings...</h4>
         <a href="https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/" target="_blank">My website is a shifting house next to a river of knowledge. What could yours be?, Laurel Schwulst</a>
 
@@ -473,6 +474,7 @@
           <li><strong style="color:#FF783E;">Tools.</strong> You can revert edits and import/export your file here. I highly recommend downloading your project by hitting <strong>Tools > Import/Export > Download Project</strong> with the turtle; it gives you a .zip folder containing your entire project that you can now edit locally or later upload to Github. You can also sync your project to Github if you have one.</li>
           <li><strong style="color:#FAFF0D;">Preview.</strong> If you don't see a preview of your website, toggle it by hitting the 'Preview' button and opening a preview pane, or open it in a new window. This preview pane refreshes automatically and is super helpful for looking through code.</li>
           <li><strong style="color:#2E43FF;">Project URL.</strong> If you are editing other files in your project that aren't <code>index.html</code>, you will have to navigate to that file in the preview pane to see it. For instance, if you're editing 'images.html' just type that in to see it!</li>
+          <li><strong>Make sure to download your project or create a Glitch account so you can save your work!</strong> If you've made your exercise without an account, the project page gets deleted in 5 days.</li>
         </ul>
 
       </div>
@@ -498,7 +500,7 @@
 
 
       <hr>
-      <div class="links-block" style="background-image:url(assets/clouds.gif)">
+      <div class="links-block" style="background-image:url(assets/clouds-horizontal.gif)">
         <a href="https://nickm.com/montfort_strickland/sea_and_spar_between/" target="_blank">Sea and Spar Between by Nick Montfort and Stephanie Strickland; a poetry generator defined "by space of language populated by a number of stanzas comparable to the number of fish in the sea, around 225 trillion"</a>
         <a href="https://poetictimes.club/" target="_blank">Poetic Times by Reidar Pritzel, displaying a random NYT headline that you can move around</a>
         <a href="https://tdingsun.github.io/tiger2/" target="_blank">I Never Believe it Until it Happens Again by Tiger Dingsun</a>
@@ -510,11 +512,50 @@
       </div>
 
       <div class="notes">
-        <h3>Making a Poetic Web</h3>
-        <p>With basic HTML, CSS, Javascript, and jQuery, we'll be manipulating a moving poem. The template is set up and we'll be manipulating values and learning as we go along. If you want to know how to do something, please go ahead and ask it or try to search for yourself!<br>
+        <h3>Your Own Moving Poem</h3>
+        <p>With basic HTML, CSS, Javascript, and jQuery, we'll be manipulating a moving poem. The template is set up and we'll be manipulating values and learning as we go along.<br><br>
+
+          Focus on changing one thing at a time and trying to understand what it's changing.<br><br>
+
+          The magical thing about code is that we can change one thing and instantly see some sort of feedback. Coding a website is just like a dance in response to one another.
         </p>
+
+        <hr>
+
+
+        <h4 id="codeinfo">More on the code</h4>
+        <p>Below is further explanation about the code. You don't have to read it before starting the exercise.</p>
+
+        <center><img src="fun/project.jpg"></center>
+
+        <p>
+          There are three languages primarily used here to make the site.<br><br>
+
+
+          <strong>HTML</strong> consists of <em>elements</em> that structure the page (so the other languages are interspersed between HTML) and also labels content.
+        </p>
+
+        <center><img src="fun/htmlelement.png"></center>
+        <p>We use <strong>tags</strong> enclosed in brackets &lt; > to write an HTML element. The ending tag has a slash / before its name, marking the end of a tag. We write the 'content' within these tags.<br>HTML elements can contain words like <code>&lt;bold>this&lt;/bold></code>, or they might contain other HTML elements to provide structure. In the code example above, <code>&lt;html></code> begins the document.</p>
+        <center><img src="fun/attributes.png"></center>
+
+        <p>You might notice that some HTML tags aren't as simple. HTML elements can contain <strong>attributes</strong>, where here <code>title="rain comes"</code>; the attribute 'title' with the value 'rain comes' gives some additional effects and properties to our HTML element.</p>
+        <hr>
+
+        <p><strong>CSS</strong> affects the 'styling' of the page, and begins within the HTML tags <code>&lt;style</code>. As it's a different language, the syntax looks a bit different: but you may notice that the names of HTML elements are referenced before curly brackets {} enclose rules about HTML's appearance.
+        </p>
+
+        <center><img src="fun/body.png"></center>
+
+        <p>Here, the element 'body' is given a property 'text-align' with a value 'center'. We end each property with a semicolon ; so we can assign multiple properties to an element, evolving its appearance. Other properties you could try are 'color', 'font-size', or 'padding', for instance. Properties and the values they take aren't always intuitive, so you're encouraged to look things up. For instance, the property 'opacity' takes values from 0 to 1.</p>
+
+        <hr>
+
+        <p><strong>Javascript</strong> provides the movement of our exercise and is used for interactivity. We use external libraries, primarily jQuery and its accompanying jQuery UI that have prewritten functions to make our desired interactions easier to achieve. The HTML element <code>&lt;script></code> that takes in URLs is calling these external libraries. Note that this workshop doesn't focus on Javascript and in fact &mdash; normal Javascript without jQuery wouldn't look this way. The syntax with dollar signs $ is primarily associated with jQuery (but not exclusively). </p>
+
       </div>
 
+      <h2 class="c">A Moving Poem</h2>
       <div class="external-website"><iframe src="https://dancing-poem.glitch.me"></iframe></div>
 
       <a target="_blank" href="https://glitch.com/edit/#!/dancing-poem">Exercise One: A Moving Poem Template (Glitch)</a>
@@ -528,6 +569,8 @@
         <li>Change words.</li>
         <li>(Maybe turn these into phrases or actions.)</li>
         <li>Delete a word.</li>
+        <li>Delete everything within the <code>&lt;style</code> and <code>&lt;/style</code> tags. What has happened to the page? Bring it back.</li>
+        <li>Delete everything within the <code>&lt;script</code> and <code>&lt;/script</code> tags. What has happened to the page? Bring it back. Or don't. Maybe the words can dance in another way.</li>
         <li>Change the title of the page to your poem's working title. You can change the title within the <code>&lt;title></code> tag at about Line 5 of the file.</li>
         <li>Add your own words.<br>Copy a <code>&lt;span></code> and add your own text. Note that this tag is always paired with a closing <code>&lt;<strong>/</strong>span></code> tag.</li>
         <li>One <code>&lt;span></code> tag has <code>class="unsortable"</code> inside of it. Classes are a type of "selector" used to style webpages. The <code>&lt;style></code> tags at the top contain rules for how stuff on the page looks; classes are selected with the <code>.</code> preceding their name. The styling declarations are contained in the curly brackets. Here, their opacity is faded.</li>
@@ -541,7 +584,7 @@
       </ul>
 
       <hr>
-      <div class="spacer" style="background-image:url(assets/clouds.gif)">
+      <div class="spacer" style="background-image:url(assets/clouds-horizontal.gif)">
       </div>
       <hr>
 
@@ -557,6 +600,8 @@
       <div class="dividertwo" style="border: 2px dashed skyblue;"></div>
 
       <div class="external-website"><iframe src="https://i-love-it-when-you.glitch.me"></iframe></div>
+
+      <h2 class="c">I Love It When You...</h2>
 
       <a target="_blank" href=" https://glitch.com/edit/#!/i-love-it-when-you ">Exercise Two: I Love it when you template (Glitch)</a> or
       <a target="_blank" href="https://github.com/chiaski/i-love-it-when-you">Exercise Two: I Love it when you template (Github)</a>
@@ -578,7 +623,7 @@
 
 
       <hr>
-      <div class="spacer" style="background-image:url(assets/clouds.gif)">
+      <div class="spacer" style="background-image:url(assets/clouds-horizontal.gif)">
       </div>
       <hr>
 
@@ -628,7 +673,7 @@
       <a href="https://docs.google.com/spreadsheets/d/18d4qbknqKAC631YSSE-cL6K0hOVHhDuIrVLD8zdGJAg/edit?usp=sharing" target="_blank">Add it to the class sheet.</a>
 
 
-      <div class="spacer" style="background-image:url(assets/clouds.gif)">
+      <div class="spacer" style="background-image:url(assets/clouds-horizontal.gif)">
       </div>
       <hr>
 
@@ -994,7 +1039,7 @@ function myFunction() {
 
       </div>
 
-      <div class="spacer" style="background-image:url(assets/clouds.gif)">
+      <div class="spacer" style="background-image:url(assets/clouds-horizontal.gif)">
       </div>
       <hr>
 
@@ -1025,7 +1070,7 @@ function myFunction() {
       <h3>Option 3: Get your own web hosting or a server</h3>
       <p>A bit too much to explain briefly &mdash; but this would give you total control. Buy a domain and shared hosting + a server; you're set.</p>
 
-      <p>Popular options include Porkbun, Namecheap, </p>
+      <p>Popular options include Porkbun, Namecheap, <a href="https://neocities.org">Neocities</a> (this is free), among others.</p>
 
       <hr>
 

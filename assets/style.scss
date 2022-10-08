@@ -78,19 +78,20 @@ main {
 
 /* width */
 main section::-webkit-scrollbar {
-  width: 10px;
+  position: fixed;
+  width: 6px;
 }
 
 /* Track */
 main section::-webkit-scrollbar-track {
-  background: $w;
+  background: transparent;
 }
 
 /* Handle */
 main section::-webkit-scrollbar-thumb {
   background: $blue;
   border-radius: 15px;
-  border: 1px solid $w;
+  border: 1px solid $b;
   margin: .25em;
 }
 
@@ -130,6 +131,7 @@ blockquote:hover {
   color: $w;
   text-align: center;
   height: 30px;
+  margin: 2.5vh 0;
   padding: .25em;
   font-size: .75em;
   font-family: $serif;
@@ -151,6 +153,7 @@ blockquote:hover {
   width: 100%;
   display: block;
   margin: 1em 0;
+  background-size: contain;
 }
 
 
@@ -161,6 +164,7 @@ h2 {
   color: $w;
   padding: 0;
   margin: 0;
+  letter-spacing: 0;
 }
 
 h3 {
@@ -215,10 +219,6 @@ p,
 li,
 div {
   text-align: left;
-}
-
-.window:hover {
-  filter: blur(10px);
 }
 
 .scroller {
@@ -330,6 +330,9 @@ a.link {
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 calc(2.5vw - 1em);
+  background-size: cover;
+  background-position: center center;
+  ;
 
   h2 {
     display: block;
