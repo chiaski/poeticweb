@@ -41,11 +41,8 @@ body {
 }
 
 main {
-  position: absolute;
   width: 100vw;
   height: 100vh;
-  left: 0;
-  top: 0;
   display: flex;
 }
 main section {
@@ -320,6 +317,11 @@ a.link {
 .links-block a:hover {
   background: rgba(244, 243, 240, 0.84);
   transform: translateY(-2px);
+}
+
+#intro {
+  height: 80vh;
+  min-height: 600px;
 }
 
 #one {

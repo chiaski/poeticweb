@@ -61,11 +61,8 @@ body {
 }
 
 main {
-  position: absolute;
   width: 100vw;
   height: 100vh;
-  left: 0;
-  top: 0;
 
   display: flex;
 
@@ -373,6 +370,12 @@ a.link {
     transform: translateY(-2px);
   }
 
+}
+
+
+#intro{
+  height: 80vh;
+  min-height: 600px;
 }
 
 // ONE
