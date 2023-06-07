@@ -4,4 +4,4 @@
 
 ​Join us in learning how to conceptualize, code, and publish your own piece of the handmade web. We’ll go through the resources and processes to make your own poetic website; resources will be shared along with starting frameworks you can use. The workshop is beginner-friendly and moreso intended for a non-technical audience interested in exploring the artistic, poetic potential of the web.
 
-Explore me here: https://chiaski.github.io/poeticweb
+https://ambient.institute/i/poeticweb
